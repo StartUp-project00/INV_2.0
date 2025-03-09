@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Dali_Raki\\Desktop\\New folder (2)\\INV_2.0\\INVUIs\\INVUIs.csproj": {}
+    "C:\\Users\\bouce\\Source\\Repos\\INV_2.0\\INVUIs\\INVUIs.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Dali_Raki\\Desktop\\New folder (2)\\INV_2.0\\INV.App\\INV.App.csproj": {
+    "C:\\Users\\bouce\\Source\\Repos\\INV_2.0\\INV.App\\INV.App.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Dali_Raki\\Desktop\\New folder (2)\\INV_2.0\\INV.App\\INV.App.csproj",
+        "projectUniqueName": "C:\\Users\\bouce\\Source\\Repos\\INV_2.0\\INV.App\\INV.App.csproj",
         "projectName": "INV.App",
-        "projectPath": "C:\\Users\\Dali_Raki\\Desktop\\New folder (2)\\INV_2.0\\INV.App\\INV.App.csproj",
-        "packagesPath": "C:\\Users\\Dali_Raki\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Dali_Raki\\Desktop\\New folder (2)\\INV_2.0\\INV.App\\obj\\",
+        "projectPath": "C:\\Users\\bouce\\Source\\Repos\\INV_2.0\\INV.App\\INV.App.csproj",
+        "packagesPath": "C:\\Users\\bouce\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\bouce\\Source\\Repos\\INV_2.0\\INV.App\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Dali_Raki\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\bouce\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,14 +26,15 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "C:\\Users\\Dali_Raki\\Desktop\\New folder (2)\\INV_2.0\\INV.Domain\\INV.Domain.csproj": {
-                "projectPath": "C:\\Users\\Dali_Raki\\Desktop\\New folder (2)\\INV_2.0\\INV.Domain\\INV.Domain.csproj"
+              "C:\\Users\\bouce\\Source\\Repos\\INV_2.0\\INV.Domain\\INV.Domain.csproj": {
+                "projectPath": "C:\\Users\\bouce\\Source\\Repos\\INV_2.0\\INV.Domain\\INV.Domain.csproj"
               }
             }
           }
@@ -103,20 +104,20 @@
         }
       }
     },
-    "C:\\Users\\Dali_Raki\\Desktop\\New folder (2)\\INV_2.0\\INV.Domain\\INV.Domain.csproj": {
+    "C:\\Users\\bouce\\Source\\Repos\\INV_2.0\\INV.Domain\\INV.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Dali_Raki\\Desktop\\New folder (2)\\INV_2.0\\INV.Domain\\INV.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\bouce\\Source\\Repos\\INV_2.0\\INV.Domain\\INV.Domain.csproj",
         "projectName": "INV.Domain",
-        "projectPath": "C:\\Users\\Dali_Raki\\Desktop\\New folder (2)\\INV_2.0\\INV.Domain\\INV.Domain.csproj",
-        "packagesPath": "C:\\Users\\Dali_Raki\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Dali_Raki\\Desktop\\New folder (2)\\INV_2.0\\INV.Domain\\obj\\",
+        "projectPath": "C:\\Users\\bouce\\Source\\Repos\\INV_2.0\\INV.Domain\\INV.Domain.csproj",
+        "packagesPath": "C:\\Users\\bouce\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\bouce\\Source\\Repos\\INV_2.0\\INV.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Dali_Raki\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\bouce\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -125,6 +126,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -194,20 +196,20 @@
         }
       }
     },
-    "C:\\Users\\Dali_Raki\\Desktop\\New folder (2)\\INV_2.0\\INV.Implementation\\INV.Implementation.csproj": {
+    "C:\\Users\\bouce\\Source\\Repos\\INV_2.0\\INV.Implementation\\INV.Implementation.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Dali_Raki\\Desktop\\New folder (2)\\INV_2.0\\INV.Implementation\\INV.Implementation.csproj",
+        "projectUniqueName": "C:\\Users\\bouce\\Source\\Repos\\INV_2.0\\INV.Implementation\\INV.Implementation.csproj",
         "projectName": "INV.Implementation",
-        "projectPath": "C:\\Users\\Dali_Raki\\Desktop\\New folder (2)\\INV_2.0\\INV.Implementation\\INV.Implementation.csproj",
-        "packagesPath": "C:\\Users\\Dali_Raki\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Dali_Raki\\Desktop\\New folder (2)\\INV_2.0\\INV.Implementation\\obj\\",
+        "projectPath": "C:\\Users\\bouce\\Source\\Repos\\INV_2.0\\INV.Implementation\\INV.Implementation.csproj",
+        "packagesPath": "C:\\Users\\bouce\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\bouce\\Source\\Repos\\INV_2.0\\INV.Implementation\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Dali_Raki\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\bouce\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -216,20 +218,21 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "C:\\Users\\Dali_Raki\\Desktop\\New folder (2)\\INV_2.0\\INV.App\\INV.App.csproj": {
-                "projectPath": "C:\\Users\\Dali_Raki\\Desktop\\New folder (2)\\INV_2.0\\INV.App\\INV.App.csproj"
+              "C:\\Users\\bouce\\Source\\Repos\\INV_2.0\\INV.App\\INV.App.csproj": {
+                "projectPath": "C:\\Users\\bouce\\Source\\Repos\\INV_2.0\\INV.App\\INV.App.csproj"
               },
-              "C:\\Users\\Dali_Raki\\Desktop\\New folder (2)\\INV_2.0\\INV.Domain\\INV.Domain.csproj": {
-                "projectPath": "C:\\Users\\Dali_Raki\\Desktop\\New folder (2)\\INV_2.0\\INV.Domain\\INV.Domain.csproj"
+              "C:\\Users\\bouce\\Source\\Repos\\INV_2.0\\INV.Domain\\INV.Domain.csproj": {
+                "projectPath": "C:\\Users\\bouce\\Source\\Repos\\INV_2.0\\INV.Domain\\INV.Domain.csproj"
               },
-              "C:\\Users\\Dali_Raki\\Desktop\\New folder (2)\\INV_2.0\\INV.Infrastructure\\INV.Infrastructure.csproj": {
-                "projectPath": "C:\\Users\\Dali_Raki\\Desktop\\New folder (2)\\INV_2.0\\INV.Infrastructure\\INV.Infrastructure.csproj"
+              "C:\\Users\\bouce\\Source\\Repos\\INV_2.0\\INV.Infrastructure\\INV.Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\bouce\\Source\\Repos\\INV_2.0\\INV.Infrastructure\\INV.Infrastructure.csproj"
               }
             }
           }
@@ -327,20 +330,20 @@
         }
       }
     },
-    "C:\\Users\\Dali_Raki\\Desktop\\New folder (2)\\INV_2.0\\INV.Infrastructure\\INV.Infrastructure.csproj": {
+    "C:\\Users\\bouce\\Source\\Repos\\INV_2.0\\INV.Infrastructure\\INV.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Dali_Raki\\Desktop\\New folder (2)\\INV_2.0\\INV.Infrastructure\\INV.Infrastructure.csproj",
+        "projectUniqueName": "C:\\Users\\bouce\\Source\\Repos\\INV_2.0\\INV.Infrastructure\\INV.Infrastructure.csproj",
         "projectName": "INV.Infrastructure",
-        "projectPath": "C:\\Users\\Dali_Raki\\Desktop\\New folder (2)\\INV_2.0\\INV.Infrastructure\\INV.Infrastructure.csproj",
-        "packagesPath": "C:\\Users\\Dali_Raki\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Dali_Raki\\Desktop\\New folder (2)\\INV_2.0\\INV.Infrastructure\\obj\\",
+        "projectPath": "C:\\Users\\bouce\\Source\\Repos\\INV_2.0\\INV.Infrastructure\\INV.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\bouce\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\bouce\\Source\\Repos\\INV_2.0\\INV.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Dali_Raki\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\bouce\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -349,17 +352,18 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "C:\\Users\\Dali_Raki\\Desktop\\New folder (2)\\INV_2.0\\INV.App\\INV.App.csproj": {
-                "projectPath": "C:\\Users\\Dali_Raki\\Desktop\\New folder (2)\\INV_2.0\\INV.App\\INV.App.csproj"
+              "C:\\Users\\bouce\\Source\\Repos\\INV_2.0\\INV.App\\INV.App.csproj": {
+                "projectPath": "C:\\Users\\bouce\\Source\\Repos\\INV_2.0\\INV.App\\INV.App.csproj"
               },
-              "C:\\Users\\Dali_Raki\\Desktop\\New folder (2)\\INV_2.0\\INV.Domain\\INV.Domain.csproj": {
-                "projectPath": "C:\\Users\\Dali_Raki\\Desktop\\New folder (2)\\INV_2.0\\INV.Domain\\INV.Domain.csproj"
+              "C:\\Users\\bouce\\Source\\Repos\\INV_2.0\\INV.Domain\\INV.Domain.csproj": {
+                "projectPath": "C:\\Users\\bouce\\Source\\Repos\\INV_2.0\\INV.Domain\\INV.Domain.csproj"
               }
             }
           }
@@ -445,20 +449,20 @@
         }
       }
     },
-    "C:\\Users\\Dali_Raki\\Desktop\\New folder (2)\\INV_2.0\\INV.Shared\\INV.Shared.csproj": {
+    "C:\\Users\\bouce\\Source\\Repos\\INV_2.0\\INV.Shared\\INV.Shared.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Dali_Raki\\Desktop\\New folder (2)\\INV_2.0\\INV.Shared\\INV.Shared.csproj",
+        "projectUniqueName": "C:\\Users\\bouce\\Source\\Repos\\INV_2.0\\INV.Shared\\INV.Shared.csproj",
         "projectName": "INV.Shared",
-        "projectPath": "C:\\Users\\Dali_Raki\\Desktop\\New folder (2)\\INV_2.0\\INV.Shared\\INV.Shared.csproj",
-        "packagesPath": "C:\\Users\\Dali_Raki\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Dali_Raki\\Desktop\\New folder (2)\\INV_2.0\\INV.Shared\\obj\\",
+        "projectPath": "C:\\Users\\bouce\\Source\\Repos\\INV_2.0\\INV.Shared\\INV.Shared.csproj",
+        "packagesPath": "C:\\Users\\bouce\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\bouce\\Source\\Repos\\INV_2.0\\INV.Shared\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Dali_Raki\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\bouce\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -467,6 +471,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -516,20 +521,20 @@
         }
       }
     },
-    "C:\\Users\\Dali_Raki\\Desktop\\New folder (2)\\INV_2.0\\INVUIs\\INVUIs.csproj": {
+    "C:\\Users\\bouce\\Source\\Repos\\INV_2.0\\INVUIs\\INVUIs.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Dali_Raki\\Desktop\\New folder (2)\\INV_2.0\\INVUIs\\INVUIs.csproj",
+        "projectUniqueName": "C:\\Users\\bouce\\Source\\Repos\\INV_2.0\\INVUIs\\INVUIs.csproj",
         "projectName": "INVUIs",
-        "projectPath": "C:\\Users\\Dali_Raki\\Desktop\\New folder (2)\\INV_2.0\\INVUIs\\INVUIs.csproj",
-        "packagesPath": "C:\\Users\\Dali_Raki\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Dali_Raki\\Desktop\\New folder (2)\\INV_2.0\\INVUIs\\obj\\",
+        "projectPath": "C:\\Users\\bouce\\Source\\Repos\\INV_2.0\\INVUIs\\INVUIs.csproj",
+        "packagesPath": "C:\\Users\\bouce\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\bouce\\Source\\Repos\\INV_2.0\\INVUIs\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Dali_Raki\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\bouce\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -538,26 +543,27 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "C:\\Users\\Dali_Raki\\Desktop\\New folder (2)\\INV_2.0\\INV.App\\INV.App.csproj": {
-                "projectPath": "C:\\Users\\Dali_Raki\\Desktop\\New folder (2)\\INV_2.0\\INV.App\\INV.App.csproj"
+              "C:\\Users\\bouce\\Source\\Repos\\INV_2.0\\INV.App\\INV.App.csproj": {
+                "projectPath": "C:\\Users\\bouce\\Source\\Repos\\INV_2.0\\INV.App\\INV.App.csproj"
               },
-              "C:\\Users\\Dali_Raki\\Desktop\\New folder (2)\\INV_2.0\\INV.Domain\\INV.Domain.csproj": {
-                "projectPath": "C:\\Users\\Dali_Raki\\Desktop\\New folder (2)\\INV_2.0\\INV.Domain\\INV.Domain.csproj"
+              "C:\\Users\\bouce\\Source\\Repos\\INV_2.0\\INV.Domain\\INV.Domain.csproj": {
+                "projectPath": "C:\\Users\\bouce\\Source\\Repos\\INV_2.0\\INV.Domain\\INV.Domain.csproj"
               },
-              "C:\\Users\\Dali_Raki\\Desktop\\New folder (2)\\INV_2.0\\INV.Implementation\\INV.Implementation.csproj": {
-                "projectPath": "C:\\Users\\Dali_Raki\\Desktop\\New folder (2)\\INV_2.0\\INV.Implementation\\INV.Implementation.csproj"
+              "C:\\Users\\bouce\\Source\\Repos\\INV_2.0\\INV.Implementation\\INV.Implementation.csproj": {
+                "projectPath": "C:\\Users\\bouce\\Source\\Repos\\INV_2.0\\INV.Implementation\\INV.Implementation.csproj"
               },
-              "C:\\Users\\Dali_Raki\\Desktop\\New folder (2)\\INV_2.0\\INV.Infrastructure\\INV.Infrastructure.csproj": {
-                "projectPath": "C:\\Users\\Dali_Raki\\Desktop\\New folder (2)\\INV_2.0\\INV.Infrastructure\\INV.Infrastructure.csproj"
+              "C:\\Users\\bouce\\Source\\Repos\\INV_2.0\\INV.Infrastructure\\INV.Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\bouce\\Source\\Repos\\INV_2.0\\INV.Infrastructure\\INV.Infrastructure.csproj"
               },
-              "C:\\Users\\Dali_Raki\\Desktop\\New folder (2)\\INV_2.0\\INV.Shared\\INV.Shared.csproj": {
-                "projectPath": "C:\\Users\\Dali_Raki\\Desktop\\New folder (2)\\INV_2.0\\INV.Shared\\INV.Shared.csproj"
+              "C:\\Users\\bouce\\Source\\Repos\\INV_2.0\\INV.Shared\\INV.Shared.csproj": {
+                "projectPath": "C:\\Users\\bouce\\Source\\Repos\\INV_2.0\\INV.Shared\\INV.Shared.csproj"
               }
             }
           }

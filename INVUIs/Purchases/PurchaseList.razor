@@ -1,6 +1,8 @@
 ﻿@using INV.App.Purchases
 @inject NavigationManager Navigation
 @rendermode InteractiveServer
+@using INV.Domain.Entities.Purchases
+
 
 <div class="d-flex justify-content-between">
     <input type="text" @bind-value="SearchTerm" placeholder="Search by order number or by supplier name" class="number-input" @bind-value:event="oninput"/>
@@ -13,16 +15,30 @@
     <h3>Loading...</h3>
 }
 else
-{
+{ <br/>
     <div class="Container-list">
         <RadzenDataGrid Data="@purchaseOrderInfos" AllowSorting="true" AllowFiltering="true"
                         Style="width: 100%;" RowSelect="@((PurchaseOrderInfo purchaseOrderInfo) => navigatepage(purchaseOrderInfo.Id))">
             <Columns>
+                <RadzenDataGridColumn Title="Status">
+                    <Template Context="purchaseOrderInfo">
+                        @if (purchaseOrderInfo.Status == PurchaseStatus.Validated)
+                        {
+                            <span class="badge bg-success">Vised</span>
+                        }
+                        else if (purchaseOrderInfo.Status == PurchaseStatus.Rejected)
+                        {
+                            <span class="badge bg-danger">Rejected</span>
+                        }
+                       
+                       
+                    </Template>
+                </RadzenDataGridColumn>
 
-                <RadzenDataGridColumn Property="@nameof(PurchaseOrderInfo.Status)" Title="Status" />
+
                 <RadzenDataGridColumn Property="@nameof(PurchaseOrderInfo.Number)" Title="Number" />
                 <RadzenDataGridColumn Property="@nameof(PurchaseOrderInfo.Date)" Title="Date" />
-                <RadzenDataGridColumn Property="@nameof(PurchaseOrderInfo.SupplierName)" Title="Supplier Name" />
+                <RadzenDataGridColumn Property="@nameof(PurchaseOrderInfo.SupplierName)" Title="Supplier" />
 
             </Columns>
         </RadzenDataGrid>

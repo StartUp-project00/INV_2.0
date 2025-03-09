@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "1EO5c7PxwEHoBM+vewzI4JRTLjpw5wGgY56BUkKL9Hk=",
+  "Hash": "fLVAZoQLIireI4uLIJv80QlIzlpLuskNhBYLgCweDGQ=",
   "Source": "INV.Web",
   "BasePath": "_content/INV.Web",
   "Mode": "Default",
@@ -5601,12 +5601,12 @@
       "OriginalItemSpec": "C:\\Users\\Dali_Raki\\.nuget\\packages\\radzen.blazor\\6.1.1\\staticwebassets\\css\\software-wcag.css"
     },
     {
-      "Identity": "C:\\Users\\Dali_Raki\\Desktop\\New folder (2)\\INV_2.0\\Web\\obj\\Debug\\net9.0\\compressed\\4yqzz0u96o-7mc1t4y1xn.gz",
+      "Identity": "C:\\Users\\Dali_Raki\\Desktop\\New folder (2)\\INV_2.0\\Web\\obj\\Debug\\net9.0\\compressed\\4yqzz0u96o-fqoga4ne94.gz",
       "SourceId": "INV.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Dali_Raki\\Desktop\\New folder (2)\\INV_2.0\\Web\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "_content/INV.Web",
-      "RelativePath": "app#[.{fingerprint=7mc1t4y1xn}]?.css.gz",
+      "RelativePath": "app#[.{fingerprint=fqoga4ne94}]?.css.gz",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -5615,8 +5615,8 @@
       "RelatedAsset": "C:\\Users\\Dali_Raki\\Desktop\\New folder (2)\\INV_2.0\\Web\\wwwroot\\app.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "3kax7mdhdb",
-      "Integrity": "Tb37McmZOpvLw9e+nQQIhlq6VW+Dj4DQHbUit1FEqfg=",
+      "Fingerprint": "cb5s2grjvv",
+      "Integrity": "GASurP5RZEjvsDxGq+Hu1hIeSiSR+XWT0S/rzfF0Fvc=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\Dali_Raki\\Desktop\\New folder (2)\\INV_2.0\\Web\\wwwroot\\app.css"
@@ -10466,8 +10466,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "7mc1t4y1xn",
-      "Integrity": "4dzRQcPxw1KkGNilDnosjgP161tjpdfYCD3XM0Vi/u4=",
+      "Fingerprint": "fqoga4ne94",
+      "Integrity": "yVSeFAKCsumu/PEuLNaVHCvfwarlLiUe6Oo0kWFOfMY=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\app.css"
@@ -49194,13 +49194,13 @@
       ]
     },
     {
-      "Route": "app.7mc1t4y1xn.css",
-      "AssetFile": "C:\\Users\\Dali_Raki\\Desktop\\New folder (2)\\INV_2.0\\Web\\obj\\Debug\\net9.0\\compressed\\4yqzz0u96o-7mc1t4y1xn.gz",
+      "Route": "app.css",
+      "AssetFile": "C:\\Users\\Dali_Raki\\Desktop\\New folder (2)\\INV_2.0\\Web\\obj\\Debug\\net9.0\\compressed\\4yqzz0u96o-fqoga4ne94.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000490677134"
+          "Quality": "0.000503524673"
         }
       ],
       "ResponseHeaders": [
@@ -49210,19 +49210,19 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2037"
+          "Value": "1985"
         },
         {
           "Name": "ETag",
-          "Value": "\"Tb37McmZOpvLw9e+nQQIhlq6VW+Dj4DQHbUit1FEqfg=\""
+          "Value": "\"GASurP5RZEjvsDxGq+Hu1hIeSiSR+XWT0S/rzfF0Fvc=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 04 Mar 2025 02:00:59 GMT"
+          "Value": "Sat, 08 Mar 2025 17:19:13 GMT"
         },
         {
           "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
+          "Value": "no-cache"
         },
         {
           "Name": "Content-Encoding",
@@ -49238,26 +49238,18 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"4dzRQcPxw1KkGNilDnosjgP161tjpdfYCD3XM0Vi/u4=\""
+          "Value": "W/\"yVSeFAKCsumu/PEuLNaVHCvfwarlLiUe6Oo0kWFOfMY=\""
         }
       ],
       "EndpointProperties": [
         {
-          "Name": "fingerprint",
-          "Value": "7mc1t4y1xn"
-        },
-        {
-          "Name": "label",
-          "Value": "app.css"
-        },
-        {
           "Name": "integrity",
-          "Value": "sha256-4dzRQcPxw1KkGNilDnosjgP161tjpdfYCD3XM0Vi/u4="
+          "Value": "sha256-yVSeFAKCsumu/PEuLNaVHCvfwarlLiUe6Oo0kWFOfMY="
         }
       ]
     },
     {
-      "Route": "app.7mc1t4y1xn.css",
+      "Route": "app.css",
       "AssetFile": "C:\\Users\\Dali_Raki\\Desktop\\New folder (2)\\INV_2.0\\Web\\wwwroot\\app.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -49267,7 +49259,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "4271"
+          "Value": "4302"
         },
         {
           "Name": "Content-Type",
@@ -49275,11 +49267,156 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"4dzRQcPxw1KkGNilDnosjgP161tjpdfYCD3XM0Vi/u4=\""
+          "Value": "\"yVSeFAKCsumu/PEuLNaVHCvfwarlLiUe6Oo0kWFOfMY=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 04 Mar 2025 02:00:59 GMT"
+          "Value": "Sat, 08 Mar 2025 17:19:13 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-yVSeFAKCsumu/PEuLNaVHCvfwarlLiUe6Oo0kWFOfMY="
+        }
+      ]
+    },
+    {
+      "Route": "app.css.gz",
+      "AssetFile": "C:\\Users\\Dali_Raki\\Desktop\\New folder (2)\\INV_2.0\\Web\\obj\\Debug\\net9.0\\compressed\\4yqzz0u96o-fqoga4ne94.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1985"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"GASurP5RZEjvsDxGq+Hu1hIeSiSR+XWT0S/rzfF0Fvc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 08 Mar 2025 17:19:13 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-GASurP5RZEjvsDxGq+Hu1hIeSiSR+XWT0S/rzfF0Fvc="
+        }
+      ]
+    },
+    {
+      "Route": "app.fqoga4ne94.css",
+      "AssetFile": "C:\\Users\\Dali_Raki\\Desktop\\New folder (2)\\INV_2.0\\Web\\obj\\Debug\\net9.0\\compressed\\4yqzz0u96o-fqoga4ne94.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000503524673"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1985"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"GASurP5RZEjvsDxGq+Hu1hIeSiSR+XWT0S/rzfF0Fvc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 08 Mar 2025 17:19:13 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"yVSeFAKCsumu/PEuLNaVHCvfwarlLiUe6Oo0kWFOfMY=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "fqoga4ne94"
+        },
+        {
+          "Name": "label",
+          "Value": "app.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-yVSeFAKCsumu/PEuLNaVHCvfwarlLiUe6Oo0kWFOfMY="
+        }
+      ]
+    },
+    {
+      "Route": "app.fqoga4ne94.css",
+      "AssetFile": "C:\\Users\\Dali_Raki\\Desktop\\New folder (2)\\INV_2.0\\Web\\wwwroot\\app.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4302"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"yVSeFAKCsumu/PEuLNaVHCvfwarlLiUe6Oo0kWFOfMY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 08 Mar 2025 17:19:13 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -49289,7 +49426,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "7mc1t4y1xn"
+          "Value": "fqoga4ne94"
         },
         {
           "Name": "label",
@@ -49297,13 +49434,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-4dzRQcPxw1KkGNilDnosjgP161tjpdfYCD3XM0Vi/u4="
+          "Value": "sha256-yVSeFAKCsumu/PEuLNaVHCvfwarlLiUe6Oo0kWFOfMY="
         }
       ]
     },
     {
-      "Route": "app.7mc1t4y1xn.css.gz",
-      "AssetFile": "C:\\Users\\Dali_Raki\\Desktop\\New folder (2)\\INV_2.0\\Web\\obj\\Debug\\net9.0\\compressed\\4yqzz0u96o-7mc1t4y1xn.gz",
+      "Route": "app.fqoga4ne94.css.gz",
+      "AssetFile": "C:\\Users\\Dali_Raki\\Desktop\\New folder (2)\\INV_2.0\\Web\\obj\\Debug\\net9.0\\compressed\\4yqzz0u96o-fqoga4ne94.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -49312,7 +49449,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2037"
+          "Value": "1985"
         },
         {
           "Name": "Content-Type",
@@ -49320,11 +49457,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"Tb37McmZOpvLw9e+nQQIhlq6VW+Dj4DQHbUit1FEqfg=\""
+          "Value": "\"GASurP5RZEjvsDxGq+Hu1hIeSiSR+XWT0S/rzfF0Fvc=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 04 Mar 2025 02:00:59 GMT"
+          "Value": "Sat, 08 Mar 2025 17:19:13 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -49342,7 +49479,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "7mc1t4y1xn"
+          "Value": "fqoga4ne94"
         },
         {
           "Name": "label",
@@ -49350,144 +49487,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-Tb37McmZOpvLw9e+nQQIhlq6VW+Dj4DQHbUit1FEqfg="
-        }
-      ]
-    },
-    {
-      "Route": "app.css",
-      "AssetFile": "C:\\Users\\Dali_Raki\\Desktop\\New folder (2)\\INV_2.0\\Web\\obj\\Debug\\net9.0\\compressed\\4yqzz0u96o-7mc1t4y1xn.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.000490677134"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "2037"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"Tb37McmZOpvLw9e+nQQIhlq6VW+Dj4DQHbUit1FEqfg=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Tue, 04 Mar 2025 02:00:59 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"4dzRQcPxw1KkGNilDnosjgP161tjpdfYCD3XM0Vi/u4=\""
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-4dzRQcPxw1KkGNilDnosjgP161tjpdfYCD3XM0Vi/u4="
-        }
-      ]
-    },
-    {
-      "Route": "app.css",
-      "AssetFile": "C:\\Users\\Dali_Raki\\Desktop\\New folder (2)\\INV_2.0\\Web\\wwwroot\\app.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "4271"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"4dzRQcPxw1KkGNilDnosjgP161tjpdfYCD3XM0Vi/u4=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Tue, 04 Mar 2025 02:00:59 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-4dzRQcPxw1KkGNilDnosjgP161tjpdfYCD3XM0Vi/u4="
-        }
-      ]
-    },
-    {
-      "Route": "app.css.gz",
-      "AssetFile": "C:\\Users\\Dali_Raki\\Desktop\\New folder (2)\\INV_2.0\\Web\\obj\\Debug\\net9.0\\compressed\\4yqzz0u96o-7mc1t4y1xn.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "2037"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"Tb37McmZOpvLw9e+nQQIhlq6VW+Dj4DQHbUit1FEqfg=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Tue, 04 Mar 2025 02:00:59 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-Tb37McmZOpvLw9e+nQQIhlq6VW+Dj4DQHbUit1FEqfg="
+          "Value": "sha256-GASurP5RZEjvsDxGq+Hu1hIeSiSR+XWT0S/rzfF0Fvc="
         }
       ]
     },

@@ -15,7 +15,7 @@ else
 {
     <div class="Container-list">
         <RadzenDataGrid Data="@Receptions" AllowSorting="true" AllowFiltering="true"
-                        Style="width: 100%;">
+                        Style="width: 100%;" RowSelect="@((ReceiptInfo Receptions) => navigatepage(Receptions.Id))">
             <Columns>
                 <RadzenDataGridColumn Property="@nameof(ReceiptInfo.BudgetArticle)" Title="Article" />
                 <RadzenDataGridColumn Property="@nameof(ReceiptInfo.Date)" Title="Date">

@@ -19,14 +19,22 @@ namespace INVUIs.Receptions
 
         protected override async Task OnInitializedAsync()
         {
-            products = ReceiptInfo.ReceiptProducts.Select(p => new ReceiptProductModel()
+            if (ReceiptInfo != null && ReceiptInfo.ReceiptProducts != null)
             {
-                ProductId = p.ProductId,
-                UnitPrice = p.UnitPrice,
-                Quantity = p.Quantity,
-                Designation = p.Designation,
-                Received = p.Quantity
-            }).ToList();
+                products = ReceiptInfo.ReceiptProducts.Select(p => new ReceiptProductModel()
+                {
+                    ProductId = p.ProductId,
+                    UnitPrice = p.UnitPrice,
+                    Quantity = p.Quantity,
+                    Designation = p.Designation,
+                    Received = p.Quantity
+                }).ToList();
+            }
+            else
+            {
+                // Handle the case where ReceiptInfo or ReceiptProducts is null
+                products = new List<ReceiptProductModel>();
+            }
         }
 
         private void Create()
@@ -46,7 +54,7 @@ namespace INVUIs.Receptions
 
         private void StartEditing()
         {
-            statusInput = true;
+            statusInput = false;
         }
 
         private async Task SaveChanges()
@@ -66,14 +74,13 @@ namespace INVUIs.Receptions
                     {
                         ReceptionId = p.ReceptionId,
                         ProductId = p.ProductId,
-                        Quantity = p.Quantity,
-                        WareHouseId = Guid.Parse("BF33EB94-40DA-452F-BB30-9525E052CB46")
-
-
+                        Quantity = products.FirstOrDefault(pp => p.ProductId == pp.ProductId).Received,
+                        WareHouseId = p.DefaultWareHouseId
                     }).ToList(),
                     Status = ReceiptStatus.editing
                 };
-                if (result.IsSuccess)
+
+                if (result != null)
                 {
                     await receptionService.UpdateReceipt(receiptToSave);
                 }
@@ -81,12 +88,13 @@ namespace INVUIs.Receptions
                 {
                     await receptionService.CreateReceipt(receiptToSave);
                 }
+                CancelEditing();
             }
         }
 
         private void CancelEditing()
         {
-            statusInput = false;
+            statusInput = true;
         }
 
         private bool checkInputs()

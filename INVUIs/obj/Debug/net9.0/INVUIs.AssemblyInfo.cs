@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("INVUIs")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c668e119a9bf48ffc7965cf68c1e39206d03f371")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+65572546534c72ed36b93babc57fa213bace96b9")]
 [assembly: System.Reflection.AssemblyProductAttribute("INVUIs")]
 [assembly: System.Reflection.AssemblyTitleAttribute("INVUIs")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

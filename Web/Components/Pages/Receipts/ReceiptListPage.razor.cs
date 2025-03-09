@@ -20,7 +20,7 @@ public partial class ReceiptListPage
     [Inject] public NavigationManager navigationManager { set; get; }
     private List<PurchaseOrderInfo> purchases;
     private WareHouseForm wareHouseForm;
-    private List<ReceiptInfo> receipts = new List<ReceiptInfo>();
+    private List<ReceiptInfo> receipts;
 
     protected override async Task OnInitializedAsync()
     {

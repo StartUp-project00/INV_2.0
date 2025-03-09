@@ -57,7 +57,7 @@
                     <RadzenDataGridColumn Property="@nameof(ReceiptProductModel.Quantity)" Title="Quantity" />
                     <RadzenDataGridColumn Title="Rest">
                         <Template Context="product">
-                            @(product.Quantity - product.Received)
+                            @(product.Quantity)
                         </Template>
                     </RadzenDataGridColumn>
                     <RadzenDataGridColumn  Property="@nameof(ReceiptProductModel.Quantity)" Title="Received">
@@ -76,24 +76,24 @@
             {
                 @if (statusInput)
                 {
-                    <button type="button" class="btn-custom btn-submit" @onclick="SaveChanges">Enregistrer</button>
-                    <button type="button" class="btn-custom btn-cancel" @onclick="CancelEditing">Annuler</button>
-                  
-                  
+
+                    <button type="submit" class="btn-custom btn-submit" @onclick="Validate">Valider</button>
+                    <button type="button" class="btn-custom btn-cancel" @onclick="StartEditing">Modifier</button>
 
                     
                 }
                 else
                 {
-                    <button type="submit" class="btn-custom btn-submit" @onclick="Validate">Valider</button>
+                    <button type="button" class="btn-custom btn-submit" @onclick="SaveChanges">Enregistrer</button>
+                    <button type="button" class="btn-custom btn-cancel" @onclick="CancelEditing">Annuler</button>
+                   
                 }
             }
-            @if (ReceiptInfo.Status == ReceiptStatus.editing && !statusInput)
-            {
-             
-                    <button type="button" class="btn-custom btn-cancel" @onclick="StartEditing">Modifier</button>
+          
+
                 
-            }
+                
+            
           
         </div>
     }

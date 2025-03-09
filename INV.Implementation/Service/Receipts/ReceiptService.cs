@@ -120,6 +120,10 @@ namespace INV.App.Services
                 try
                 {
                     await receiptStorage.UpdateReceipt(receipt);
+                    foreach (var product in receipt.Products)
+                    {
+                        await receiptStorage.UpdateReceiptProduct(product);
+                    }
                     scope.Complete();
                     return Result.Success();
                 }

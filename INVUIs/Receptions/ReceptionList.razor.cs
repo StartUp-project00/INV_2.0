@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.Forms;
 using INVUIs.Receptions.Models;
 using INV.Domain.Shared;
+using INV.Shared;
 
 namespace INVUIs.Receptions
 {
@@ -13,6 +14,8 @@ namespace INVUIs.Receptions
         [Parameter] public List<ReceiptInfo> Receptions { get; set; }
         [Parameter] public RenderFragment Pills { get; set; }
         [Inject] public NavigationManager navigationManager { set; get; }
+
+        public async Task navigatepage(Guid id) => Navigation.NavigateTo($"receptions/new/{id}");
 
         private ReceptionModel commandshow = new ReceptionModel();
 

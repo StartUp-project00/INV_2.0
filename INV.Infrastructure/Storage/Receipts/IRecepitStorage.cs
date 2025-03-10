@@ -33,4 +33,5 @@ public interface IReceiptStorage
     ValueTask<ReceiptInfo> GetReceiptInfoById(Guid receiptId, bool includeProducts = false);
 
     ValueTask ValidateReceipt(Guid receiptId);
+    ValueTask<bool> ReceiptExistById(Guid id);
 }

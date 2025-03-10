@@ -222,5 +222,16 @@ namespace INV.App.Services
 
             return errors;
         }
+        public async ValueTask<Result<bool>> ReceiptExistById(Guid id)
+        {
+            try
+            {
+                return Result.Success(await receiptStorage.ReceiptExistById(id));
+            }
+            catch (Exception ex)
+            {
+                return Result.Failure<bool>(Error.Exception(ex));
+            }
+        }
     }
 }

@@ -8,6 +8,6 @@ namespace INV.App.Products
         Task<Result> CreateProduct(Product product);
         Task<int> SetProducts(Product product);
         Task<int> RemoveProduct(Guid id);
-        Task<List<Product>> SelectProducts();
+        Task<List<ProductInfo>> GetProducts();
     }
 }

@@ -5,7 +5,7 @@ using INV.Domain.Entities.Purchases;
 using INV.Domain.Entities.Suppliers;
 using INVUIs.Products;
 using INVUIs.Products.ProductsModel;
-using INVUIs.Purchases.PurchaseModels;
+using INVUIs.Purchases.Models;
 using INVUIs.Suppliers.Models;
 using Microsoft.AspNetCore.Components;
 

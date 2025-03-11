@@ -2616,8 +2616,6 @@ C:\Users\bouce\Source\Repos\INV_2.0\Web\obj\Debug\net9.0\compressed\wdklkr28vv-h
 C:\Users\bouce\Source\Repos\INV_2.0\Web\obj\Debug\net9.0\compressed\9pcqnw5bme-4d85u1mtcx.gz
 C:\Users\bouce\Source\Repos\INV_2.0\Web\obj\Debug\net9.0\compressed\8ikc71brpp-0j3bgjxly4.gz
 C:\Users\bouce\Source\Repos\INV_2.0\Web\obj\Debug\net9.0\compressed\eojifsclv0-7t9tbfaemk.gz
-C:\Users\bouce\Source\Repos\INV_2.0\Web\obj\Debug\net9.0\compressed\021ct6d7ij-lfu4zd5uqi.gz
-C:\Users\bouce\Source\Repos\INV_2.0\Web\obj\Debug\net9.0\compressed\rek1ffk2gf-kg5iajit03.gz
 C:\Users\bouce\Source\Repos\INV_2.0\Web\obj\Debug\net9.0\staticwebassets.build.json
 C:\Users\bouce\Source\Repos\INV_2.0\Web\obj\Debug\net9.0\staticwebassets.development.json
 C:\Users\bouce\Source\Repos\INV_2.0\Web\obj\Debug\net9.0\staticwebassets.build.endpoints.json
@@ -2634,3 +2632,5 @@ C:\Users\bouce\Source\Repos\INV_2.0\Web\obj\Debug\net9.0\refint\INV.Web.dll
 C:\Users\bouce\Source\Repos\INV_2.0\Web\obj\Debug\net9.0\INV.Web.pdb
 C:\Users\bouce\Source\Repos\INV_2.0\Web\obj\Debug\net9.0\INV.Web.genruntimeconfig.cache
 C:\Users\bouce\Source\Repos\INV_2.0\Web\obj\Debug\net9.0\ref\INV.Web.dll
+C:\Users\bouce\Source\Repos\INV_2.0\Web\obj\Debug\net9.0\compressed\021ct6d7ij-mzdy96loev.gz
+C:\Users\bouce\Source\Repos\INV_2.0\Web\obj\Debug\net9.0\compressed\rek1ffk2gf-7rhjq5u0c3.gz

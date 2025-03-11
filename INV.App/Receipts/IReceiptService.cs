@@ -1,9 +1,7 @@
 ﻿using INV.Domain.Entities.Receipts;
 using INV.Domain.Shared;
-using INV.App.Receipts;
-using INV.Domain.Entities.Purchases;
 
-namespace INV.App.Services
+namespace INV.App.Receipts
 {
     public interface IReceiptService
     {

@@ -41,7 +41,7 @@ namespace INV.Implementation.Service.ProductServices
             return await productStorage.DeleteProduct(id);
         }
 
-        public async Task<List<Product>> SelectProducts()
+        public async Task<List<ProductInfo>> GetProducts()
         {
             return await productStorage.SelectProducts();
         }

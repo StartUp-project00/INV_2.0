@@ -13,7 +13,7 @@ namespace INV.Infrastructure.Storage.Purchases
         Task<List<PurchaseProduct>> SelectAllPurchaseProduct();
         Task<List<PurchaseOrderInfo>> SelectPurchaseOrdersByIdSupplier(Guid IDSupplier);
 
-        Task<PurchaseOrder> SelectPurchaseOrdersByID(Guid id);
+        Task<PurchaseOrderInfo> SelectPurchaseOrdersByID(Guid id);
         Task<int> ValidatePurchase(PurchaseOrder purchaseOrder);
 
         ValueTask<List<PurchaseOrderInfo>> SelectPurchasesForReceiptCreation();

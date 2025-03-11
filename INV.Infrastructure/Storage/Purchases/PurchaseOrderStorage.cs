@@ -28,7 +28,7 @@ namespace INV.Infrastructure.Storage.Purchases
 
         private const string selectPurchaseProductsQuery = @" SELECT * FROM [purchase].[PRODUCTS]";
 
-        private const string selectPurchceOrderByIdQuery = @" SELECT * FROM [INV].[purchase].[ORDERS] WHERE Id=@aId";
+        private const string selectPurchceOrderByIdQuery = "purchase.GetById";
 
         private const string insertOrderDetailCommand = @"
             INSERT INTO [purchase].[PRODUCTS] (PurchaseId, ProductId, Quantity, UnitPrice)
@@ -144,17 +144,31 @@ namespace INV.Infrastructure.Storage.Purchases
             return purchaseOrders;
         }
 
-        public async Task<PurchaseOrder?> SelectPurchaseOrdersByID(Guid id)
+        public async Task<PurchaseOrderInfo?> SelectPurchaseOrdersByID(Guid id)
         {
             using var sqlConnection = new SqlConnection(_connectionString);
-            await sqlConnection.OpenAsync();
-
+            
             using var cmd = new SqlCommand(selectPurchceOrderByIdQuery, sqlConnection);
+            cmd.CommandType = CommandType.StoredProcedure;
             cmd.Parameters.AddWithValue("@aId", id);
 
-            using var reader = await cmd.ExecuteReaderAsync();
+            DataSet ds = new();
+            SqlDataAdapter da = new(cmd);
+            await sqlConnection.OpenAsync();
 
-            return await reader.ReadAsync() ? getPurchaseOrdersData(reader) : null;
+            da.Fill(ds);
+
+            if (ds.Tables[0].Rows.Count == 0)
+            {
+                return null;
+            }
+            else return purchaseOrderInfoFromDataSet(ds);
+        }
+
+        private PurchaseOrderInfo? purchaseOrderInfoFromDataSet(DataSet ds)
+        {
+            PurchaseOrderInfo purchase = new();
+            purchase.Id = (Guid)ds.Tables[0].Rows[0]["Id"];
         }
 
         public async Task<int> InsertPurchaseProduct(PurchaseProduct orderDetail)

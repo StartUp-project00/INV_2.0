@@ -1,9 +1,8 @@
-﻿using INV.Domain.Entities.Receipts;
-using INV.Domain.Entities.WareHouse;
+﻿using INV.Domain.Entities.WareHouses;
 using Microsoft.Data.SqlClient;
 using Microsoft.Extensions.Configuration;
 
-namespace INV.Infrastructure.Storage.WareHouseStorages;
+namespace INV.Infrastructure.Storage.WareHousesStorages;
 
 public class WareHouseStrorage : IWareHouseStorage
 {

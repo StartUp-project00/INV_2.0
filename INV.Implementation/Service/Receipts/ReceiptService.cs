@@ -1,11 +1,10 @@
 ﻿using System.Transactions;
 using INV.App.Receipts;
-using INV.Domain.Entities.Purchases;
 using INV.Domain.Entities.Receipts;
 using INV.Domain.Shared;
 using INV.Infrastructure.Storage.Receipts;
 
-namespace INV.App.Services
+namespace INV.Implementation.Service.Receipts
 {
     public class ReceiptService : IReceiptService
     {
@@ -18,7 +17,7 @@ namespace INV.App.Services
 
         public async ValueTask<ReceiptInfo> CreateReceiptFromPurchase(Guid purchaseId)
         {
-            using(TransactionScope scope = new TransactionScope(TransactionScopeAsyncFlowOption.Enabled) )
+            using (TransactionScope scope = new TransactionScope(TransactionScopeAsyncFlowOption.Enabled))
             {
                 try
                 {
@@ -30,12 +29,12 @@ namespace INV.App.Services
                     throw;
                 }
             }
-           
+
         }
 
         public async ValueTask<Result> ValidateReceipt(Guid receiptId)
         {
-            using(TransactionScope scope = new TransactionScope(TransactionScopeAsyncFlowOption.Enabled))
+            using (TransactionScope scope = new TransactionScope(TransactionScopeAsyncFlowOption.Enabled))
             {
                 try
                 {
@@ -48,7 +47,7 @@ namespace INV.App.Services
                     return Error.Exception(ex);
                 }
             }
-           
+
         }
 
         public async ValueTask<Result<List<ReceiptInfo>>> GetAllReceipts()
@@ -107,7 +106,7 @@ namespace INV.App.Services
                 }
                 catch (Exception ex)
                 {
-                  
+
                     return Error.Exception(ex);
                 }
             }
@@ -115,7 +114,7 @@ namespace INV.App.Services
 
         public async ValueTask<Result> UpdateReceipt(Receipt receipt)
         {
-            using(TransactionScope scope = new TransactionScope(TransactionScopeAsyncFlowOption.Enabled))
+            using (TransactionScope scope = new TransactionScope(TransactionScopeAsyncFlowOption.Enabled))
             {
                 try
                 {
@@ -132,7 +131,7 @@ namespace INV.App.Services
                     return Result.Failure(ReceiptError.ReceiptUpdateFailed);
                 }
             }
-           
+
         }
 
         public async ValueTask<Result> RemoveReceipt(Guid id)

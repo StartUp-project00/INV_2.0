@@ -13,7 +13,7 @@ namespace INV.App.Purchases
 
         Task<List<PurchaseOrderInfo>> GetPurchaseOrdersByIdSupplier(Guid idSupplier);
 
-        Task<PurchaseOrder> GetPurchaseOrdersByID(Guid id);
+        Task<PurchaseOrderInfo> GetPurchaseOrdersByID(Guid id);
 
         Task<int> ValicatePurchaseOrder(PurchaseOrder purchaseOrder);
 

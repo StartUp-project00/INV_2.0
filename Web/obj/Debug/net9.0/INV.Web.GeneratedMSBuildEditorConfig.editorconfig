@@ -44,6 +44,14 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xQREYucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/bouce/Source/Repos/INV_2.0/Web/Components/Pages/Products/ProductsListPage.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xQcm9kdWN0c1xQcm9kdWN0c0xpc3RQYWdlLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/bouce/Source/Repos/INV_2.0/Web/Components/Pages/Products/ProductsPage.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xQcm9kdWN0c1xQcm9kdWN0c1BhZ2UucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/bouce/Source/Repos/INV_2.0/Web/Components/Pages/Purchases/NewPurchasePage.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xQdXJjaGFzZXNcTmV3UHVyY2hhc2VQYWdlLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 

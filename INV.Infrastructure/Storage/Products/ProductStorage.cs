@@ -1,4 +1,5 @@
-﻿using INV.Domain.Entities.Products;
+﻿using INV.App.Products;
+using INV.Domain.Entities.Products;
 using Microsoft.Data.SqlClient;
 using Microsoft.Extensions.Configuration;
 
@@ -24,23 +25,21 @@ namespace INV.Infrastructure.Storage.Products
         private const string deleteProductCommand = @"
             Delete from [dbo].[PRODUCTS] where Id=@aId";
 
-        private const string selectProductsQuery = @"
-            SELECT * FROM [dbo].[PRODUCTS] ";
+        private const string selectProductsQuery = "select * from dbo.getproducts()";
         private const string selectProductCountByIdQuery = @"
             SELECT count(*) FROM Products WHERE Designation = @aDesignation";
 
-        private static Product getProductData(SqlDataReader reader)
-        {
-            return new Product
+        private static ProductInfo getProductData(SqlDataReader reader) =>
+            new ProductInfo
             {
                 Id = (Guid)reader["Id"],
                 Designation = (string)reader["Designation"],
                 UnitMeasure = (string)reader["UnitMeasure"],
                 Quantity = (int)reader["Quantity"],
-                UnitPrice = (decimal)reader["UnitPrice"],
                 TVA = (int)reader["TVA"],
+                DefaultWareHouseId = (Guid)reader["DefaultWareHouseId"],
+                WareHouseName = (string)reader["WarehouseName"]
             };
-        }
 
         public async Task<int> InsertProduct(Product product)
         {
@@ -82,9 +81,9 @@ namespace INV.Infrastructure.Storage.Products
             return await cmd.ExecuteNonQueryAsync();
         }
 
-        public async Task<List<Product>> SelectProducts()
+        public async Task<List<ProductInfo>> SelectProducts()
         {
-            var products = new List<Product>();
+            var products = new List<ProductInfo>();
 
             using var sqlConnection = new SqlConnection(_connectionString);
             var cmd = new SqlCommand(selectProductsQuery, sqlConnection);

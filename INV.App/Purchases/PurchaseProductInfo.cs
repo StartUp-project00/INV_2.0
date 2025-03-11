@@ -1,12 +1,15 @@
-﻿namespace INV.App.Purchases
+﻿using INV.App.Products;
+
+namespace INV.App.Purchases
 {
     public class PurchaseProductInfo
     {
         public Guid ProductId {      get; set; }
-        public string ProductName { get; set; }
-        public string ProductMU { get; set; }
+        public string Designation { get; set; }
+        public string UnitMeasure { get; set; }
         public int TVA { get; set; }
         public int Quantity { get; set; }
         public decimal UnitPrice { get; set; }
+        public decimal Total => Quantity * UnitPrice;
     }
 }

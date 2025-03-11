@@ -1,0 +1,69 @@
+﻿@using INV.App.Products;
+@using INV.Domain.Entities.Products
+@inject NavigationManager Navigation
+@rendermode InteractiveServer
+
+
+@if (!showForm)
+{
+    <button class="addsupplier-button" @onclick="() => showForm = true">
+        <i class="bi bi-cart-plus"></i> Add Product
+    </button>
+}
+
+@if (showForm)
+{
+    <h4>Informations Product</h4>
+    <EditForm Model="@newProduct" OnValidSubmit="SaveProduct">
+        <DataAnnotationsValidator />
+        <div class="form-group">
+            <label>Designation</label>
+            <InputText @bind-Value="newProduct.Designation" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label>Quantity</label>
+            <InputNumber @bind-Value="newProduct.Quantity" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label>Unit Measure</label>
+            <InputText @bind-Value="newProduct.UnitMeasure" class="form-control" />
+        </div>
+        <br />
+        <button type="submit" class="btn btn-success">Save</button>
+        <button type="button" class="btn btn-secondary" @onclick="() => showForm = false">Cancel</button>
+    </EditForm>
+}
+
+@if (Products is null)
+{
+    <h3>Loading...</h3>
+}
+else
+{
+    <br />
+    <br />
+    <div class="Container-list">
+        <RadzenDataGrid Data="@Products" AllowSorting="true" AllowFiltering="true">
+            <Columns>
+                <RadzenDataGridColumn Property="@nameof(ProductInfo.Designation)" Title="Designation" Width="300px" />
+                <RadzenDataGridColumn Property="@nameof(ProductInfo.Quantity)" Title="Quantity" Width="100px" />
+                <RadzenDataGridColumn Property="@nameof(ProductInfo.UnitMeasure)" Title="Unit Measure" Width="48px" Sortable="false" Filterable="false" />
+                <RadzenDataGridColumn Property="@nameof(ProductInfo.WareHouseName)" Title="WareHouse" Width="200px" />
+              
+                <RadzenDataGridColumn Title="Actions" Sortable="false" Filterable="false" Width="100px">
+                    <Template Context="product">
+                        <button class="btn btn-warning" @onclick="() => EditProduct(product)">
+                            <i class="bi bi-pencil" style="color:white;"></i>
+                        </button>
+                        <button class="btn btn-danger" @onclick="() => DeleteProduct(product.Id)">
+                            <i class="bi bi-trash"></i>
+                        </button>
+                    </Template>
+                </RadzenDataGridColumn>
+
+            </Columns>
+        </RadzenDataGrid>
+
+    </div>
+}
+

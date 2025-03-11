@@ -57,7 +57,7 @@ namespace INV.Implementation.Service.Purchses
             return await purchaseOrderStorage.SelectPurchaseOrdersByIdSupplier(idSupplier);
         }
 
-        public async Task<PurchaseOrder> GetPurchaseOrdersByID(Guid id)
+        public async Task<PurchaseOrderInfo> GetPurchaseOrdersByID(Guid id)
         {
            
             return await purchaseOrderStorage.SelectPurchaseOrdersByID(id);

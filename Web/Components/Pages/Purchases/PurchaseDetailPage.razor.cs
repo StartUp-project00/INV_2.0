@@ -1,10 +1,7 @@
 ﻿using INV.App.Purchases;
 using INV.App.Receipts;
-using INV.App.Services;
 using INV.Domain.Entities.Purchases;
 using INV.Domain.Entities.Receipts;
-using INV.Domain.Shared;
-using INV.Implementation.Service.Purchses;
 using Microsoft.AspNetCore.Components;
 
 namespace INV.Web.Components.Pages.Purchases

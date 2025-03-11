@@ -1,7 +1,5 @@
 ﻿using System.Data;
 using INV.App.Receipts;
-using INV.Domain.Entities.Budget;
-using INV.Domain.Entities.Purchases;
 using INV.Domain.Entities.Receipts;
 using Microsoft.Data.SqlClient;
 using Microsoft.Extensions.Configuration;

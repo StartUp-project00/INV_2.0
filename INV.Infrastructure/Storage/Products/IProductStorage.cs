@@ -1,4 +1,5 @@
-﻿using INV.Domain.Entities.Products;
+﻿using INV.App.Products;
+using INV.Domain.Entities.Products;
 
 namespace INV.Infrastructure.Storage.Products
 {
@@ -8,7 +9,7 @@ namespace INV.Infrastructure.Storage.Products
         Task<int> InsertProduct(Product product);
         Task<int> UpdateProduct(Product product);
         Task<int> DeleteProduct(Guid id);
-        Task<List<Product>> SelectProducts();
+        Task<List<ProductInfo>> SelectProducts();
         Task<bool> ProductExistsByaDesignation(string designation);
     }
 }

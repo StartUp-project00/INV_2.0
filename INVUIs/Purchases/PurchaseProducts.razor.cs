@@ -1,5 +1,6 @@
 ﻿using INVUIs.Products;
 using INVUIs.Products.ProductsModel;
+using INVUIs.Purchases.Models;
 using Microsoft.AspNetCore.Components;
 using Radzen.Blazor;
 
@@ -12,7 +13,7 @@ namespace INVUIs.Purchases
         [Parameter] public EventCallback<List<ProductModel>> OnProductAddProduct { get; set; }
         public ProductForm productForm = new ProductForm();
         public ProductSelector productSelector = new ProductSelector();
-        private List<ProductModel> products = new();
+        private List<PurchaseProductModel> products = new();
         public RadzenDataGrid<ProductModel> grid;
         private bool showPopup = false;
         private ProductModel newProduct = new ProductModel();
@@ -27,16 +28,14 @@ namespace INVUIs.Purchases
         [Parameter] public EventCallback<ProductModel> OnEditProduct { get; set; }
 
 
-        private void EditProduct(ProductModel product)
+        private void EditProduct(PurchaseProductModel product)
         {
             selectedProductModel = new ProductModel
             {
-                ID = product.ID,
-                IDPurchaseOrder = product.IDPurchaseOrder,
+                ID = product.ProductId,
                 Designation = product.Designation,
                 UnitMeasure = product.UnitMeasure,
-                Quantity = product.Quantity,
-                UnitPrice = product.UnitPrice,
+        
                 TVA = product.TVA
             };
 

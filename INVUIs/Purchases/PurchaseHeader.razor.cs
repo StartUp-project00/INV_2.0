@@ -1,4 +1,4 @@
-using INVUIs.Purchases.PurchaseModels;
+using INVUIs.Purchases.Models;
 using Microsoft.AspNetCore.Components;
 
 namespace INVUIs.Purchases

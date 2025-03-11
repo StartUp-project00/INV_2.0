@@ -36,6 +36,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UHJvZHVjdHNcUHJvZHVjdFNlbGVjdG9yLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/bouce/Source/Repos/INV_2.0/INVUIs/Products/ProductsList.razor]
+build_metadata.AdditionalFiles.TargetPath = UHJvZHVjdHNcUHJvZHVjdHNMaXN0LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/bouce/Source/Repos/INV_2.0/INVUIs/Purchases/PurchaseCard.razor]
 build_metadata.AdditionalFiles.TargetPath = UHVyY2hhc2VzXFB1cmNoYXNlQ2FyZC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 

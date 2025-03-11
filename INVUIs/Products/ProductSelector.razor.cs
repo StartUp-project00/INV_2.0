@@ -1,5 +1,4 @@
 ﻿using INV.App.Products;
-using INV.Domain.Entities.Products;
 using Microsoft.AspNetCore.Components;
 using INVUIs.Products.ProductsModel;
 
@@ -8,11 +7,11 @@ namespace INVUIs.Products;
 public partial class ProductSelector
 {
     [Inject] public IProductService productService { set; get; }
-    private List<Product> products;
+    private List<ProductInfo> products;
     private ProductModel selectedProductModel;
     private ProductForm productForm = new();
     private string filterText;
-    private List<Product> filteredProducts;
+    private List<ProductInfo> filteredProducts;
 
     private bool visibility = false;
     [Parameter] public EventCallback<ProductModel> OnProductSelectedEvent { get; set; }
@@ -29,7 +28,7 @@ public partial class ProductSelector
 
     protected override async Task OnInitializedAsync()
     {
-        products = await productService.SelectProducts();
+        products = await productService.GetProducts();
         filterProducts();
     }
 
@@ -44,7 +43,7 @@ public partial class ProductSelector
                 .ToList();
 
         if (!filteredProducts.Any(p => p.Id == Guid.Empty))
-            filteredProducts.Insert(0, new Product { Id = Guid.Empty, Designation = "Create Product" });
+            filteredProducts.Insert(0, new ProductInfo { Id = Guid.Empty, Designation = "Create Product" });
     }
 
     public void HideModal()
@@ -79,11 +78,7 @@ public partial class ProductSelector
                     selectedProductModel = new ProductModel
                     {
                         ID = product.Id,
-                        Designation = product.Designation,
-                        UnitMeasure = product.UnitMeasure,
-                        TVA = product.TVA,
-                        UnitPrice = product.UnitPrice,
-                        Quantity = product.Quantity
+                        Designation = product.Designation                     
                     };
                     //  await OnProductSelectedEvent.InvokeAsync(selectedProductModel);
                 }
@@ -97,8 +92,8 @@ public partial class ProductSelector
     {
         if (selectedProductModel != null)
         {
-            selectedProductModel.UnitPrice = UnitPrice;
-            selectedProductModel.Quantity = Quantity;
+            //selectedProductModel.UnitPrice = UnitPrice;
+            //selectedProductModel.Quantity = Quantity;
             //  await OnProductSelectedEvent.InvokeAsync(selectedProductModel);
             HideModal();
         }
@@ -107,8 +102,8 @@ public partial class ProductSelector
     {
         if (selectedProductModel != null)
         {
-            selectedProductModel.UnitPrice = UnitPrice;
-            selectedProductModel.Quantity = Quantity;
+            //selectedProductModel.UnitPrice = UnitPrice;
+            //selectedProductModel.Quantity = Quantity;
             await OnProductSelectedEvent.InvokeAsync(selectedProductModel);
             HideModal();
         }

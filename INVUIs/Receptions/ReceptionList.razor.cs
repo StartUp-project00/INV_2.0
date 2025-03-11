@@ -1,10 +1,7 @@
 using INV.App.Receipts;
-using INV.Domain.Entities.Receipts;
 using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.Forms;
 using INVUIs.Receptions.Models;
-using INV.Domain.Shared;
-using INV.Shared;
 
 namespace INVUIs.Receptions
 {

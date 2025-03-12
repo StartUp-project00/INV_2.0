@@ -93,5 +93,23 @@ namespace INV.Implementation.Service.Purchses
                 throw new($"Purchase Order service error : {e.Message}");
             }
         }
+        public async ValueTask<int> DeletePurchaseProduct(PurchaseProduct purchaseProduct)
+        {
+            return await purchaseOrderStorage.DeletePurchaseProduct(purchaseProduct);
+        }
+
+        public async ValueTask<int> UpdatePurchaseOrder(PurchaseOrder purchaseOrder)
+        {
+            return await purchaseOrderStorage.UpdatePurchaseOrder(purchaseOrder);
+        }
+        public async ValueTask<int> UpdatePurchaseProduct(PurchaseProduct purchaseProduct)
+        {
+            return await purchaseOrderStorage.UpdatePurchaseProduct(purchaseProduct);
+        }
+           public async ValueTask<int> DeleteAllPurchaseProduct(Guid purchaseOrderId)
+                {
+                    return await purchaseOrderStorage.DeleteAllPurchaseProduct(purchaseOrderId);
+                }
+        
     }
 }

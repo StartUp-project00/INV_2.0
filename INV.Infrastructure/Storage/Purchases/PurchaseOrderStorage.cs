@@ -33,6 +33,9 @@ namespace INV.Infrastructure.Storage.Purchases
         private const string insertOrderDetailCommand = @"
             INSERT INTO [purchase].[PRODUCTS] (PurchaseId, ProductId, Quantity, UnitPrice)
             VALUES (@aPurchaseId, @aProductId, @aQuantity, @aUnitPrice)";
+        private const string updatePurchaseProductCommand = @"
+            update [purchase].[PRODUCTS]
+            set  Quantity=@aQuantity, UnitPrice=@aUnitPrice where PurchaseId=@aPurchaseId and ProductId=@aProductId";
 
         private const string insertPurchaseOrderCommand = @"
             INSERT INTO [purchase].[ORDERS] (Id, Number, SupplierId, Date, BudgetArticle, BudgetType,
@@ -42,6 +45,14 @@ namespace INV.Infrastructure.Storage.Purchases
 
         private const string validatePurchaseCommand =
             @" UPDATE purchase.ORDERS SET VisaNumber=@aVisaNumber , VisaDate=@aVisaDate ,Status=@aStatus Where Id=@aId";
+        private const string updatePurchaseOrderCommand = @"
+            UPDATE [purchase].[ORDERS] 
+            SET Number=@aNumber, SupplierId=@aSupplierId, Date=@aDate, BudgetArticle=@aBudgetArticle, 
+                BudgetType=@aBudgetType, ServiceType=@aServiceType, TotalHT=@aTotalHT, 
+                TotalVA=@aTotalTVA, TotalTC=@aTotalTTC, CompletionDelay=@aCompletionDelay
+            WHERE Id=@aId";
+        private const string deletePurchaseProductCommand = "DELETE FROM [purchase].[PRODUCTS] WHERE PurchaseId=@aPurchaseId AND ProductId=@aProductId";
+        private const string deleteAllPurchaseProductCommand = "DELETE FROM [purchase].[PRODUCTS] WHERE PurchaseId=@aPurchaseId ";
 
         private const string SelectPurchasesForReceiptCreationCommand = "reception.SelectPurchasesForReceiptCreation";
         private static PurchaseOrder getPurchaseOrdersData(SqlDataReader reader)
@@ -64,7 +75,16 @@ namespace INV.Infrastructure.Storage.Purchases
                 Status = (PurchaseStatus)reader["Status"] 
             };
         }
-
+        public async ValueTask<int> DeletePurchaseProduct(PurchaseProduct purchaseProduct)
+        {
+            using var sqlConnection = new SqlConnection(_connectionString);
+            var cmd = new SqlCommand(deletePurchaseProductCommand, sqlConnection);
+            cmd.Parameters.AddWithValue("@aPurchaseId", purchaseProduct.PurchaseOrderId);
+            cmd.Parameters.AddWithValue("@aProductId", purchaseProduct.ProductId);
+            await sqlConnection.OpenAsync();
+            return await cmd.ExecuteNonQueryAsync();
+        }
+  
         private static PurchaseOrderInfo getPurchaseOrdersInfoData(SqlDataReader reader)
         {
             var r =  new PurchaseOrderInfo
@@ -107,8 +127,6 @@ namespace INV.Infrastructure.Storage.Purchases
         {
             using var sqlConnection = new SqlConnection(_connectionString);
             var cmd = new SqlCommand(insertPurchaseOrderCommand, sqlConnection);
-            await sqlConnection.OpenAsync();
-
             cmd.Parameters.AddWithValue("@aId", purchaseOrder.Id);
             cmd.Parameters.AddWithValue("@aNumber", purchaseOrder.Number);
             cmd.Parameters.AddWithValue("@aSupplierId", purchaseOrder.SupplierId);
@@ -120,10 +138,10 @@ namespace INV.Infrastructure.Storage.Purchases
             cmd.Parameters.AddWithValue("@aTotalTVA", purchaseOrder.TotalTVA);
             cmd.Parameters.AddWithValue("@aTotalTTC", purchaseOrder.TotalTTC);
             cmd.Parameters.AddWithValue("@CompletionDelay", purchaseOrder.CompletionDelay);
-
+            await sqlConnection.OpenAsync();
             return await cmd.ExecuteNonQueryAsync();
         }
-
+   
         public async Task<List<PurchaseOrder>> SelectPurchaseOrdersByDate(DateOnly selectedDate)
         {
             var purchaseOrders = new List<PurchaseOrder>();
@@ -170,7 +188,7 @@ namespace INV.Infrastructure.Storage.Purchases
 
             return await cmd.ExecuteNonQueryAsync();
         }
-
+   
         public async Task<List<PurchaseProduct>> SelectAllPurchaseProduct()
         {
             var orderDetails = new List<PurchaseProduct>();
@@ -244,7 +262,46 @@ namespace INV.Infrastructure.Storage.Purchases
 
             return (purchaseOrdersInfo);
         }
+        public async ValueTask<int> UpdatePurchaseOrder(PurchaseOrder purchaseOrder)
+        {
+            using var sqlConnection = new SqlConnection(_connectionString);
+            var cmd = new SqlCommand(updatePurchaseOrderCommand, sqlConnection);
+            cmd.Parameters.AddWithValue("@aId", purchaseOrder.Id);
+            cmd.Parameters.AddWithValue("@aNumber", purchaseOrder.Number);
+            cmd.Parameters.AddWithValue("@aSupplierId", purchaseOrder.SupplierId);
+            cmd.Parameters.AddWithValue("@aDate", purchaseOrder.Date);
+            cmd.Parameters.AddWithValue("@aBudgetArticle", purchaseOrder.BudgeArticle);
+            cmd.Parameters.AddWithValue("@aBudgetType", purchaseOrder.BudgeType);
+            cmd.Parameters.AddWithValue("@aServiceType", purchaseOrder.ServiceType);
+            cmd.Parameters.AddWithValue("@aTotalHT", purchaseOrder.TotalHT);
+            cmd.Parameters.AddWithValue("@aTotalTVA", purchaseOrder.TotalTVA);
+            cmd.Parameters.AddWithValue("@aTotalTTC", purchaseOrder.TotalTTC);
+            cmd.Parameters.AddWithValue("@aCompletionDelay", purchaseOrder.CompletionDelay);
+            await sqlConnection.OpenAsync();
+            return await cmd.ExecuteNonQueryAsync();
+        }
+        public async ValueTask<int> UpdatePurchaseProduct(PurchaseProduct purchaseProduct)
+        {
+            using var sqlConnection = new SqlConnection(_connectionString);
+            var cmd = new SqlCommand(insertOrderDetailCommand, sqlConnection);
+            
 
-        
+            cmd.Parameters.AddWithValue("@aPurchaseOrderId", purchaseProduct.PurchaseOrderId);
+            cmd.Parameters.AddWithValue("@aProductId", purchaseProduct.ProductId);
+            cmd.Parameters.AddWithValue("@aQuantity", purchaseProduct.Quantity);
+            cmd.Parameters.AddWithValue("@aUnitPrice", purchaseProduct.UnitPrice);
+            await sqlConnection.OpenAsync();
+            return await cmd.ExecuteNonQueryAsync();
+        }
+
+        public async ValueTask<int> DeleteAllPurchaseProduct(Guid purchaseOrderId)
+        {
+            using var sqlConnection = new SqlConnection(_connectionString);
+            var cmd = new SqlCommand(deletePurchaseProductCommand, sqlConnection);
+            cmd.Parameters.AddWithValue("@aPurchaseId", purchaseOrderId);
+           
+            await sqlConnection.OpenAsync();
+            return await cmd.ExecuteNonQueryAsync();
+        }
     }
 }

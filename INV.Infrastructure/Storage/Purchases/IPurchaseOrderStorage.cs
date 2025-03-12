@@ -8,7 +8,6 @@ namespace INV.Infrastructure.Storage.Purchases
         Task<int> InsertPurchaseOrder(PurchaseOrder purchaseOrder);
         Task<List<PurchaseOrder>> SelectPurchaseOrdersByDate(DateOnly dateOnly);
         IAsyncEnumerable<PurchaseOrderInfo> SelectPurchaseOrderInfo();
-
         Task<int> InsertPurchaseProduct(PurchaseProduct orderDetail);
         Task<List<PurchaseProduct>> SelectAllPurchaseProduct();
         Task<List<PurchaseOrderInfo>> SelectPurchaseOrdersByIdSupplier(Guid IDSupplier);
@@ -17,6 +16,10 @@ namespace INV.Infrastructure.Storage.Purchases
         Task<int> ValidatePurchase(PurchaseOrder purchaseOrder);
 
         ValueTask<List<PurchaseOrderInfo>> SelectPurchasesForReceiptCreation();
+        ValueTask<int> DeletePurchaseProduct(PurchaseProduct purchaseProduct);
+        ValueTask<int> UpdatePurchaseOrder(PurchaseOrder purchaseOrder);
+        ValueTask<int> UpdatePurchaseProduct(PurchaseProduct purchaseProduct);
+        ValueTask<int> DeleteAllPurchaseProduct(Guid purchaseOrderId);
 
     }
 }

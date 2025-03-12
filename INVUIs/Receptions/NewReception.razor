@@ -55,13 +55,14 @@
                 <Columns>
                     <RadzenDataGridColumn Property="@nameof(ReceiptProductModel.Designation)" Title="Designation" />
                     <RadzenDataGridColumn Property="@nameof(ReceiptProductModel.Quantity)" Title="Quantity" />
-                    <RadzenDataGridColumn Title="Rest">
+                    <RadzenDataGridColumn Title="Rest" Visible="@restVisibility">
                         <Template Context="product">
-                            @(product.Quantity)
+                            @(product.Received)
                         </Template>
                     </RadzenDataGridColumn>
                     <RadzenDataGridColumn  Property="@nameof(ReceiptProductModel.Quantity)" Title="Received">
                         <Template Context="product" >
+
                             <InputNumber @bind-Value="product.Received" disabled="@statusInput" />
                         </Template>
                     </RadzenDataGridColumn>

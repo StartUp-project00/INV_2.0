@@ -72,7 +72,7 @@ namespace INV.Infrastructure.Storage.Receipts
                 Id = (Guid)row["Id"],
                 PurchaseId = (Guid)row["PurchaseId"],
                 Date = row.IsNull("Date") ? (DateOnly?)null : DateOnly.FromDateTime((DateTime)row["Date"]),
-                purchaseNumber = row.IsNull("purchaseNumber") ? null : (string)row["purchaseNumber"],
+                purchaseNumber = row.IsNull("PurchaseNumber") ? null : (string)row["PurchaseNumber"],
                 supplierId = (Guid)row["supplierId"],
                 supplierName = row.IsNull("supplierName") ? null : (string)row["supplierName"],
                 DeliveryNumber = row.IsNull("DeliveryNumber") ? null : (string)row["DeliveryNumber"],

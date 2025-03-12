@@ -20,5 +20,9 @@ namespace INV.App.Purchases
         Task CreatePurchaseOrder(PurchaseOrder purchaseOrder, List<Product> products);
 
         ValueTask<List<PurchaseOrderInfo>> GetPurchasesForReceiptCreation();
+        ValueTask<int> DeletePurchaseProduct(PurchaseProduct purchaseProduct);
+        ValueTask<int> UpdatePurchaseOrder(PurchaseOrder purchaseOrder);
+        ValueTask<int> UpdatePurchaseProduct(PurchaseProduct purchaseProduct);
+        ValueTask<int> DeleteAllPurchaseProduct(Guid purchaseOrderId);
     }
 }
